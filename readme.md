@@ -10,4 +10,4 @@ até o mais avançado.
 * Classes utilitárias; 
 * Generics.
 
-![java.png](../../Pictures/java.png)
+![java.png](/home/augustto366/Pictures/java.png)
