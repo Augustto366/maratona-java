@@ -12,4 +12,4 @@ até o mais avançado.
 
 ![java.png](./src/public/java.png)
 
-[Acesse a playlist do curso](https://www.youtube.com/playlist?list=PL62G310vn6nFIsOCC0H-C2infYgwm8SWW :video_camera:
+[Acesse a playlist do curso](https://www.youtube.com/playlist?list=PL62G310vn6nFIsOCC0H-C2infYgwm8SWW) :video_camera:
