@@ -1,3 +1,5 @@
+package introducao;
+
 import java.util.Scanner;
 
 public class Aula06EstruturasDeRepeticao04 {
