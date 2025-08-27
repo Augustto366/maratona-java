@@ -1,6 +1,5 @@
 package javacore.Sformatacao.test;
 
-import javacore.Exercicios.dominio.Local;
 
 import java.text.NumberFormat;
 import java.util.Locale;
