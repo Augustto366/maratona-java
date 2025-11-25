@@ -9,6 +9,21 @@ public class Smartphone {
         this.serialNumber = serialNumber;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null) return false;
+        if (getClass() != obj.getClass()) return false;
+
+        Smartphone other = (Smartphone) obj;
+        return serialNumber == other.serialNumber;
+    }
+
+    @Override
+    public int hashCode() {
+        return this.serialNumber.hashCode();
+    }
+
     public String getSerialNumber() {
         return serialNumber;
     }

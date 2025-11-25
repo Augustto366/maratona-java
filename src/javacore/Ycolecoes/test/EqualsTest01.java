@@ -11,5 +11,7 @@ public class EqualsTest01 {
         Smartphone sp = new Smartphone("1ABC2", "iPhone");
         Smartphone sp2 = new Smartphone("1ABC2", "iPhone");
         System.out.println(sp.equals(sp2));
+        System.out.println(sp.hashCode());
+        System.out.println(sp2.hashCode());
     }
 }
