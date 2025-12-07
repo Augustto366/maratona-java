@@ -1,4 +1,4 @@
-package javacore.Ycolecoes.test.domain;
+package javacore.Ycolecoes.domain;
 
 public class Smartphone {
     private String serialNumber;
@@ -22,6 +22,11 @@ public class Smartphone {
     @Override
     public int hashCode() {
         return this.serialNumber.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "Smartphone [serialNumber=" + serialNumber + ", marca=" + marca + "]";
     }
 
     public String getSerialNumber() {
