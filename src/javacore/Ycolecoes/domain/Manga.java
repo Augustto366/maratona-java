@@ -2,7 +2,7 @@ package javacore.Ycolecoes.domain;
 
 import java.util.Objects;
 
-public class Manga {
+public class Manga implements Comparable<Manga>{
     private Long id;
     private String name;
     private double price;
@@ -81,5 +81,20 @@ public class Manga {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+
+    @Override
+    public int compareTo(Manga arg0) {
+        // Long é um wrapper, ou seja, já tem CompareTo internamente
+        /*if (this.id < arg0.getId()) {
+            return -1;
+        } else if (this.id.equals(arg0.getId())) {
+            return 0;
+        } else {
+            return 1;
+        }*/
+
+        return this.id.compareTo(arg0.getId());
     }
 }
