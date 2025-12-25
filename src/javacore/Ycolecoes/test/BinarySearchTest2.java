@@ -2,21 +2,13 @@ package javacore.Ycolecoes.test;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 import javacore.Ycolecoes.domain.Manga;
 
-class MangaByIdComparator implements Comparator<Manga> {
-
-    @Override
-    public int compare(Manga manga1, Manga manga2) {
-        return manga1.getId().compareTo(manga2.getId());
-    }
-}
-
-public class MangaSortTest01 {
+public class BinarySearchTest2 {
     public static void main(String[] args) {
+        MangaByIdComparator mangaByIdComparator = new MangaByIdComparator();
         List<Manga> mangas = new ArrayList<>();
         mangas.add(new Manga(5L, "Attack on Titans", 19.9));
         mangas.add(new Manga(7L, "Pokemon", 18.5));
@@ -24,18 +16,15 @@ public class MangaSortTest01 {
         mangas.add(new Manga(9L, "Hellsing Ultimate", 9.99));
         mangas.add(new Manga(1L, "Dragon Ball Z", 25.65));
 
-        Collections.sort(mangas);
-
-        for (Manga manga : mangas) {
-            System.out.println(manga);
-        }
-
-        System.out.println("---------------");
-
-        Collections.sort(mangas, new MangaByIdComparator());
+        Collections.sort(mangas, mangaByIdComparator);
+        //mangas.sort(new MangaByIdComparator()); pode ser desta maneira também.
 
         for (Manga manga: mangas) {
             System.out.println(manga);
         }
+
+        Manga mangaSearch = new Manga(9L, "Bersek", 10.9);
+
+        System.out.println(Collections.binarySearch(mangas, mangaSearch, mangaByIdComparator));
     }
 }
